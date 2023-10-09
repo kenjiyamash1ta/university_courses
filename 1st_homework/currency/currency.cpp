@@ -40,7 +40,7 @@ void Converter::Print_result() {
     cout << currency;
     this->mode == 1 ? cout << " долларов" : cout << " рублей";
     cout << " = " << result;
-    this->mode == 1 ? cout << " рублей" : cout << " долларов";
+    this->mode == 1 ? cout << " рублей\n" : cout << " долларов\n";
 }
 
 int main() {
