@@ -2,23 +2,14 @@
     "tasks": [
         {
             "type": "cppbuild",
-<<<<<<< HEAD
             "label": "C/C++: g++.exe сборка активного файла",
             "command": "C:\\msys64\\ucrt64\\bin\\g++.exe",
-=======
-            "label": "C/C++: g++ сборка активного файла",
-            "command": "/usr/bin/g++",
->>>>>>> de376dac436c0ef6b7353eb8c3fbaf87f11b41e5
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
                 "${file}",
                 "-o",
-<<<<<<< HEAD
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
-=======
-                "${fileDirname}/${fileBasenameNoExtension}"
->>>>>>> de376dac436c0ef6b7353eb8c3fbaf87f11b41e5
             ],
             "options": {
                 "cwd": "${fileDirname}"
