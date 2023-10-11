@@ -43,7 +43,7 @@ bool Door::BoxtoDoor(Box box)
     return doorxy[0] >= boxxyz[0] && doorxy[1] >= boxxyz[1];
 }
 
-void SettingBox(Box &box){
+void CinBox(Box &box){
     cout << "Размеры ящика X Y Z";
     double x,y,z;
     cout << "\nX: "; cin >> x;
@@ -51,7 +51,7 @@ void SettingBox(Box &box){
     cout << "\nZ: "; cin >> z;
     box.SetBox(x,y,z);
 }
-void SettingDoor(Door &door){
+void CinDoor(Door &door){
     cout << "Размеры двери X Y";
     double x,y;
     cout << "\nX: "; cin >> x;
@@ -63,11 +63,12 @@ void PrintResultBtD(bool fit){
 }
 
 int main(){
-    Box box;
+    setlocale(LC_ALL,"rus");
+    Box box;    
     Door door;
-    SettingBox(box);
-    SettingDoor(door);
+    CinBox(box);
+    CinDoor(door);
     bool fit = door.BoxtoDoor(box);
     PrintResultBtD(fit);
     return 0;
-}
+}   
