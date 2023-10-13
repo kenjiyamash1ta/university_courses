@@ -1,23 +1,33 @@
 #include <iostream>
 using namespace std;
 
-int main(){
-    setlocale(LC_ALL, "rus");
-    int dots, skip;
+void CinDots(int& dots){
     cout << "Введите число точек в окружности: ";
     cin >> dots;
+}
+
+void CinSkip(int& skip){
     cout << "\nВведите сколько точек пропускают отрезки: ";
     cin >> skip;
+}
+int CountLinks(int dots, int skip){
     int temp= skip;
     int ans = 1;
 
     while(!(temp%dots==0))
     {
-        temp += skip;
+        temp += skip + 1;
         ans++;
     }
-    
-    cout << endl << ans << " звеньев будет в ломаной в момент когда она замкнется";
+    return ans;
+}
+
+int main(){
+    setlocale(LC_ALL, "rus");
+    int dots, skip;
+    CinDots(dots);
+    CinSkip(skip);
+    cout << endl << CountLinks(dots,skip) << " звеньев будет в ломаной в момент когда она замкнется";
 
     return 0;
 }
