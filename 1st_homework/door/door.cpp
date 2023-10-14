@@ -1,3 +1,6 @@
+/*
+Дверь. Пройдет ли ящик Х на Y на Z в дверной проем А и В одним из сових торцев без наклонов?
+*/
 #include <iostream>
 #include <algorithm>
 using namespace std;
