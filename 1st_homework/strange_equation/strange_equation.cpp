@@ -9,5 +9,7 @@ using namespace std;
 int main(){
     string K;
     cin >> K;
-    cout << K.length() * stoi(K) << endl;
+    int N = K.length() * stoi(K);
+    if (to_string(N).length() == K.length() + 1) N+= stoi(K);
+    cout << N << endl;
 }
