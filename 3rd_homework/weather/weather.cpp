@@ -8,11 +8,10 @@
 #include <iostream>
 using namespace std;
 
-int countDay = 0, countNeg = 0, maxPos = 0, minPos = 100, temp = 0, sumNeg = 0;
-
 int main(){
     setlocale(LC_ALL, "rus");
 
+    int countDay = 0, countNeg = 0, maxPos = 0, minPos = 100, temp = 0, sumNeg = 0;
     while(true)
     {
         cout << "\nВведите " << countDay + 1 << "-ую температуру (или ctrl+d, чтобы прервать ввод)";
