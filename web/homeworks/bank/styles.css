@@ -1,0 +1,224 @@
+/* общие стили */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    color: #424242;
+}
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+.bottons {
+    width: 440px;
+    display: flex;
+    justify-content: space-between;
+}
+.btn {
+    display: flex;
+    width: 200px;
+    height: 55px;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 3px;
+    text-decoration: none;
+}
+.btn-primary{
+    background-color: #3A95FF;
+    color: #FFF;
+}
+.btn-secondary {
+    border: 1px solid #3A95FF;
+    color: #3A95FF;
+    box-sizing: border-box;
+}
+/* стили хедера */
+header {
+    border-bottom: 1px solid #DEDEDE;
+}
+.header-info {
+    height: 68px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top-menu {
+    width: 945px;
+    display: flex;
+    justify-content: space-between;
+}
+.top-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.top-menu a {
+    text-decoration: none;
+    color: #424242;
+    font-size: 14px;
+    font-weight: 500;
+}
+.topmenu-left {
+    width: 352px;
+    display: flex;
+    justify-content: space-between;
+}
+.topmenu-right {
+    width: 340px;
+    display: flex;
+    justify-content: space-between;
+}
+/* стили главной навигации */
+.main-menu {
+    border-bottom: 1px solid #DEDEDE;
+}
+.main-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.main-menu a {
+    text-decoration: none;
+    color: #424242;
+    font-size: 16px;
+    font-weight: 500;
+}
+.mainmenu-list {
+    height: 68px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* стили баннера */
+.banner {
+    box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.2);
+}
+.banner-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner-info p {
+    font-size: 52px;
+    font-weight: 600;
+    color: #212121;
+    margin-top: 0;
+}
+.blue-text {
+    color: #3A95FF
+}
+
+/* стили блока лучшие предложения */
+.offers {
+    margin-top: 70px;
+}
+.offers h1 {
+    color: #212121;
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 0;
+}
+.offers-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 662px;
+    align-content: space-between;
+    margin-top: 70px;
+}
+.offers-info-item {
+    background-color: #eff2f5;
+    border-radius: 8px;
+    box-shadow:  0px 8px 20px 0px rgba(0,0,0,0.05);
+    width: 555px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+.offers-info-item img {
+    border-radius: 0 8px 8px 0;
+}
+
+/* стили блока карты */
+.credits-info {
+    display: flex;
+    justify-content: space-between;
+}
+.credits {
+    background-color: #eff2f5;
+    margin-top: 110px;
+    padding: 140px 0;
+    box-sizing: border-box;
+}
+.credits-60 {
+    width: 750px;
+    height: 500px;
+    background-color: #e0e5ea;
+    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.1), -5px, -5px, 25px 0px rgba(255,255,255,0.25);
+    border-radius: 8px;
+    padding-left: 100px;
+    box-sizing: border-box;
+}
+.credits-60-head {
+    width: 650px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+.credits-60-head p {
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 130%;
+    color: #212121;
+} /*  --- */
+.credits-60-info {
+    width: 544px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.credits-60-item {
+    width: 164px;
+    line-height: 130%;
+    font-weight: 500;
+    text-align: center;
+}
+.info-item-top {
+    font-size: 30px;
+    color: #212121;
+    border-bottom: 1px solid #3A95FF;
+    padding-bottom: 14px;
+}
+.info-item-bot{
+    font-size: 18px;
+    padding-top: 6px;
+}
+.credits-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.credits-right-item {
+    width: 360px;
+    height: 235px;
+    background-color: #f6f6f6;
+    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.1), -5px, -5px, 25px 0px rgba(255,255,255,0.25);
+    border-radius: 8px;
+    border-bottom: 5px solid #3A95FF;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    padding: 34px;
+}
+.credits-right-item img {
+    align-self: flex-end;
+}
+.credits-right-item p {
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 130px;
+    color: #212121;
+}

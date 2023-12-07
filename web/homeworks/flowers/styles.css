@@ -1,0 +1,143 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+}
+
+header {
+  height: 80px;
+  box-shadow: 0px 15px 35px 0px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+  height: inherit;
+}
+
+.logo .logo_img {
+  display: block;
+  margin: auto 0;
+}
+
+.phone a {
+  text-decoration: none;
+  color: #212121;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+h1 {
+  color: #424242;
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 63px;
+  line-height: 49px;
+}
+
+.flower-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flower {
+  width: 196px;
+  margin-top: 63px;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.flower-name {
+  color: #212121;
+  margin-top: 23px;
+  line-height: 22px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.flower-desc {
+  color: #424242;
+  margin-top: 10px;
+  line-height: 22px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.line {
+  background-color: #ffb5b5;
+  height: 1px;
+  margin: 0 1px;
+}
+
+.quoting-conteiner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 282px;
+}
+
+.quoting {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 300;
+  color: #ff445a;
+  line-height: 48px;
+}
+
+.quoting {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.quoting-author {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.verse-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 440px;
+}
+
+.verse {
+  font-weight: 400;
+  line-height: 150%;
+  width: 555px;
+  font-size: 18px;
+}
+
+.verse-img {
+  margin-top: 100px;
+}
+
+footer {
+  height: 80px;
+  background-color: #ffb5b5;
+}
+
+.footer-conteiner {
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-text {
+  color: #fff;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+}
