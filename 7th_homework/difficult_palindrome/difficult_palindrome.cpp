@@ -3,33 +3,44 @@
 Провека: является ли строка палиндромом(перевертышем) без учета пробелов. 
 Пример такой строчки - палиндрома: А РОЗА УПАЛА НА ЛАПУ АЗОРА
 */
-#include <iostream> 
+#include <iostream>
 #include <string>
-#include <algorithm>
+#include <cctype>
 
-using namespace std;
-
-bool isPalindrome(string s){
-    for(auto it = s.begin();it!=s.end();it++)
-    {
-        if(*it == ' ')
-        {
-            s.erase(it);
+bool isPalindrome(const std::string& str) {
+    int left = 0;
+    int right = str.length() - 1;
+    
+    while (left < right) {
+        while (!isalpha(str[left])) {
+            left++;
         }
+        while (!isalpha(str[right])) {
+            right--;
+        }
+        
+        if (std::tolower(str[left]) != std::tolower(str[right])) {
+            return false;
+        }
+        
+        left++;
+        right--;
     }
     
+    return true;
 }
 
-int main(){
+int main() {
     setlocale(LC_ALL, "rus");
-    string test = "А РОЗА УПАЛА НА ЛАПУ АЗОРА";
-    if (isPalindrome(test))
-    {
-        cout << "Это не палиндром";
+    std::string input;
+    std::cout << "Введите строку: ";
+    std::getline(std::cin, input);
+    
+    if (isPalindrome(input)) {
+        std::cout << "Это палиндром" << std::endl;
+    } else {
+        std::cout << "Это не палиндром" << std::endl;
     }
-    else
-    {
-        cout << "Это не палиндром";
-    }
+    
     return 0;
 }
